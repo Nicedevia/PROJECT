@@ -4,13 +4,13 @@ echo "=============================="
 echo "   DÉMARRAGE DU SCRIPT"
 echo "=============================="
 
-# # Étape 1 : Arrêter les services Docker Compose
-# echo ">>> Arrêt des services Docker Compose..."
-# docker-compose down
+# Étape 1 : Arrêter les services Docker Compose
+echo ">>> Arrêt des services Docker Compose..."
+docker-compose down
 
-# # Étape 2 : Démarrer les services Docker Compose
-# echo ">>> Démarrage des services Docker Compose..."
-# docker-compose up -d
+# Étape 2 : Démarrer les services Docker Compose
+echo ">>> Démarrage des services Docker Compose..."
+docker-compose up -d
 
 # Étape 3 : Attente de la disponibilité de Cassandra
 echo ">>> Attente de la disponibilité de Cassandra..."
@@ -87,6 +87,15 @@ if pytest --disable-warnings; then
     echo ">>> Tous les tests ont réussi."
 else
     echo ">>> Échec de certains tests. Veuillez vérifier les logs de pytest."
+    exit 1
+fi
+
+# Étape 12 : Démarrage de l'API FastAPI
+echo ">>> Démarrage de l'API FastAPI..."
+if uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload & then
+    echo ">>> API FastAPI démarrée avec succès."
+else
+    echo ">>> Erreur lors du démarrage de l'API FastAPI."
     exit 1
 fi
 
