@@ -22,7 +22,10 @@ def update_meteo(capteur_id: uuid.UUID, date: datetime, new_visibilite: float, n
     UPDATE meteo SET visibilite = %s, precipitation = %s
     WHERE capteur_id = %s AND date = %s
     """
-    session.execute(query, (new_visibilite, new_precipitation, capteur_id, date))
+    try:
+        session.execute(query, (new_visibilite, new_precipitation, capteur_id, date))
+    except Exception as e:
+        raise Exception(f"Erreur lors de la mise à jour : {e}")
 
 def delete_meteo(capteur_id: uuid.UUID, date: datetime):
     query = "DELETE FROM meteo WHERE capteur_id = %s AND date = %s"

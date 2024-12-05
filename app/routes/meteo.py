@@ -30,13 +30,21 @@ async def get_meteo_endpoint(capteur_id: uuid.UUID, date: datetime):
 
 
 
+from fastapi.concurrency import run_in_threadpool
+
+from logging_config import logger
+
 @router.put("/{capteur_id}/{date}", response_model=Meteo)
 async def update_meteo(capteur_id: uuid.UUID, date: datetime, visibilite: float = Body(...), precipitation: float = Body(...)):
+    logger.info(f"Requête reçue pour mise à jour du capteur {capteur_id} à la date {date}.")
     try:
         update_meteo(capteur_id, date, visibilite, precipitation)
+        logger.info(f"Mise à jour réussie pour le capteur {capteur_id} à la date {date}.")
         return {"capteur_id": capteur_id, "date": date, "visibilite": visibilite, "precipitation": precipitation}
     except Exception as e:
+        logger.error(f"Erreur lors de la mise à jour du capteur {capteur_id} : {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
+
 
 
 @router.delete("/{capteur_id}/{date}")
