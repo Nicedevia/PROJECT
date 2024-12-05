@@ -4,13 +4,13 @@ echo "=============================="
 echo "   DÉMARRAGE DU SCRIPT"
 echo "=============================="
 
-# Étape 1 : Arrêter les services Docker Compose
-echo ">>> Arrêt des services Docker Compose..."
-docker-compose down
+# # Étape 1 : Arrêter les services Docker Compose
+# echo ">>> Arrêt des services Docker Compose..."
+# docker-compose down
 
-# Étape 2 : Démarrer les services Docker Compose
-echo ">>> Démarrage des services Docker Compose..."
-docker-compose up -d
+# # Étape 2 : Démarrer les services Docker Compose
+# echo ">>> Démarrage des services Docker Compose..."
+# docker-compose up -d
 
 # Étape 3 : Attente de la disponibilité de Cassandra
 echo ">>> Attente de la disponibilité de Cassandra..."

@@ -1,7 +1,6 @@
 from cassandra.cluster import Cluster
 from cassandra.query import BatchStatement
 import csv
-from concurrent.futures import ThreadPoolExecutor
 import os
 import uuid
 from hashlib import sha256
@@ -12,7 +11,6 @@ def generate_deterministic_uuid(latitude, longitude):
     """
     hash_input = f"{latitude},{longitude}".encode('utf-8')
     return uuid.UUID(sha256(hash_input).hexdigest()[:32])
-
 
 # Configuration de la connexion
 cluster = Cluster(['127.0.0.1'], port=9042)
@@ -45,17 +43,15 @@ def insert_batch(rows):
                 int(row["Limitation de Vitesse"])
             ))
         except ValueError as e:
-            print(f"Données invalides : {row}, Erreur : {e}")
             lignes_ignores += 1
             continue  # Passer à la prochaine ligne
     
     try:
         session.execute(batch)
         lignes_inserees += len(rows) - lignes_ignores
-        print(f"Batch de {len(rows)} lignes inséré avec succès.")
     except Exception as e:
         print(f"Erreur lors de l'insertion d'un batch : {e}")
-
+        raise e  # Interrompre si une erreur critique se produit
 
 # Chargement des données depuis le CSV
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -75,13 +71,22 @@ with open(file_path, 'r', encoding='utf-8') as file:
         cluster.shutdown()
         exit(1)
 
-# Diviser les données en groupes de 100 lignes par batch
-batch_size = 100
+# Diviser les données en groupes de 300 lignes par batch
+batch_size = 300
 batches = [rows[i:i + batch_size] for i in range(0, len(rows), batch_size)]
 
-# Insertion avec exécution parallèle et suivi
-with ThreadPoolExecutor(max_workers=10) as executor:
-    executor.map(insert_batch, batches)
+# Insertion séquentielle avec regroupement des logs
+group_size = 12  # Afficher un log toutes les 12 batches
+for batch_index, batch in enumerate(batches, start=1):
+    try:
+        insert_batch(batch)
+        if batch_index % group_size == 0:
+            print(f"{group_size} batches de {batch_size} lignes insérés avec succès (jusqu'à batch {batch_index}).")
+    except Exception as e:
+        print(f"Erreur critique lors de l'insertion du batch {batch_index}. Arrêt du script.")
+        session.shutdown()
+        cluster.shutdown()
+        exit(1)
 
 # Fermeture de la session et du cluster
 session.shutdown()

@@ -1,4 +1,4 @@
-version: "3.8"
+# version: "3.8"
 
 services:
   cassandra:
@@ -11,8 +11,8 @@ services:
       test: ["CMD-SHELL", "cqlsh -e 'describe keyspaces' || exit 1"]
       interval: 10s
       timeout: 5s
-      retries: 5
-      start_period: 40s
+      retries: 2
+      start_period: 30s
 
   api:
     build:
