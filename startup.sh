@@ -36,7 +36,16 @@ else
     exit 1
 fi
 
-# Étape 6 : Exécuter create_tables.py
+# Étape 6 : Nettoyer et vérifier les données
+echo ">>> Nettoyage et vérification des données avec net_et_veri_donnee.py..."
+if python net_et_veri_donnee.py; then
+    echo ">>> Données nettoyées et vérifiées avec succès."
+else
+    echo ">>> Erreur lors de l'exécution de net_et_veri_donnee.py."
+    exit 1
+fi
+
+# Étape 7 : Exécuter create_tables.py
 echo ">>> Création des tables avec create_tables.py..."
 if python create_tables.py; then
     echo ">>> Tables créées avec succès."
@@ -45,7 +54,7 @@ else
     exit 1
 fi
 
-# Étape 7 : Vérifier la structure des tables
+# Étape 8 : Vérifier la structure des tables
 echo ">>> Vérification de la structure des tables avec view_all_tables_schematic.py..."
 if python view_all_tables_schematic.py; then
     echo ">>> Structure des tables vérifiée avec succès."
@@ -54,7 +63,7 @@ else
     exit 1
 fi
 
-# Étape 8 : Remplir les tables avec run_insertions.py
+# Étape 9 : Remplir les tables avec run_insertions.py
 echo ">>> Insertion des données dans les tables avec run_insertions.py..."
 if python run_all_insertions.py; then
     echo ">>> Données insérées avec succès."
@@ -63,7 +72,7 @@ else
     exit 1
 fi
 
-# Étape 9 : Vérifier la structure des tables après insertion
+# Étape 10 : Vérifier la structure des tables après insertion
 echo ">>> Vérification de la structure des tables après insertion avec view_all_tables_schematic.py..."
 if python view_all_tables_schematic.py; then
     echo ">>> Structure des tables après insertion vérifiée avec succès."
@@ -72,7 +81,7 @@ else
     exit 1
 fi
 
-# Étape 10 : Lancer les tests
+# Étape 11 : Lancer les tests
 echo ">>> Lancement des tests avec pytest (sans warnings)..."
 if pytest --disable-warnings; then
     echo ">>> Tous les tests ont réussi."
