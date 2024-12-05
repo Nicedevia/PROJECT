@@ -17,7 +17,7 @@ def parse_date(date_str):
     return datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 
 # Lire et insérer les données
-with open('app/donnée/meteodata.csv', 'r') as file:
+with open('app/donnée/meteodata_cleaned.csv', 'r') as file:
     reader = csv.DictReader(file)
     
     for row in reader:

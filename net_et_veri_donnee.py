@@ -19,7 +19,8 @@ if __name__ == "__main__":
     # Liste des scripts à exécuter
     scripts = [
         "vacances.py",
-        "veri_speed.py"
+        "veri_speed.py",
+        "veri_met.py"
     ]
 
     # Exécute chaque script
