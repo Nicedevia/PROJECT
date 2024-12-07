@@ -3,3 +3,9 @@ uvicorn
 cassandra-driver
 pytest
 pydantic
+# pip install python-jose[cryptography] fastapi-users bcrypt
+# fastapi
+# passlib[bcrypt]
+# jose
+# pip install "python-jose[cryptography]"
+# pip install python-multipart

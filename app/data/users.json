@@ -1,0 +1,30 @@
+{
+    "briac": {
+        "username": "briac",
+        "hashed_password": "$2b$12$luZJyY0I3TH2VgAvtd7cAuWiIvTEQlcWo6azrLgrZSZiUGDq2fVva"
+    },
+    "nico": {
+        "username": "nico",
+        "hashed_password": "$2b$12$8v8d16KbwQB/epTu70k2S.MwZ2yOanRHNxPSd8GI5vTsYfXyClvXG"
+    },
+    "sam": {
+        "username": "sam",
+        "hashed_password": "$2b$12$vmXZcERI1KOGx3Cy2d568OJQ0nQL/uMT9utGm5hkGI.j0rrBu3LZ6"
+    },
+    "admin": {
+        "username": "admin",
+        "hashed_password": "$2b$12$KbSsLgZK2eHGGjODNwW50uMR.0ryfuFREJl6yeyS5AydfMSYUL7Vi"
+    },
+    "admin1": {
+        "username": "admin1",
+        "hashed_password": "$2b$12$KbSsLgZK2eHGGjODNwW50uMR.0ryfuFREJl6yeyS5AydfMSYUL7Vi"
+    },
+    "lucas": {
+        "username": "lucas",
+        "hashed_password": "$2b$12$GqOiO66IuZlCuDR3SB6.XuIqAFhTxxmnRNLCEYBtwa4xmsDZLqenW"
+    },
+    "mj": {
+        "username": "mj",
+        "hashed_password": "$2b$12$p2g8T9PdZUagvaTy1PMk4uD2PSJmiJzx.ljrxI5BMfAl996sEeoLG"
+    }
+}

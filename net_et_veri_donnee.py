@@ -20,7 +20,8 @@ if __name__ == "__main__":
     scripts = [
         "vacances.py",
         "veri_speed.py",
-        "veri_met.py"
+        "veri_met.py",
+        "joursferier.py"
     ]
 
     # Exécute chaque script
