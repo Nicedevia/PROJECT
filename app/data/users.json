@@ -26,5 +26,13 @@
     "mj": {
         "username": "mj",
         "hashed_password": "$2b$12$p2g8T9PdZUagvaTy1PMk4uD2PSJmiJzx.ljrxI5BMfAl996sEeoLG"
+    },
+    "jo": {
+        "username": "jo",
+        "hashed_password": "$2b$12$KUU861RhWawNRXiRtAFWIuyyQ7mVuCjUnrHE9c2sINWbqqhCiO10W"
+    },
+    "leo": {
+        "username": "leo",
+        "hashed_password": "$2b$12$H17sLnE41Z/bJ3eDz1QlguDWf8Q.Q8qer.PoMS3TL3csyXosI50C."
     }
 }

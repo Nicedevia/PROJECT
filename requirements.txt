@@ -4,8 +4,26 @@ cassandra-driver
 pytest
 pydantic
 # pip install python-jose[cryptography] fastapi-users bcrypt
-# fastapi
-# passlib[bcrypt]
-# jose
-# pip install "python-jose[cryptography]"
-# pip install python-multipart
+fastapi
+passlib[bcrypt]
+jose
+python-jose[cryptography]
+python-multipart
+
+fastapi
+uvicorn
+pydantic
+python-dotenv
+cassandra-driver
+passlib
+bcrypt
+requests
+beautifulsoup4
+pandas
+pytest
+pytest-asyncio
+jose
+httpx
+starlette
+watchfiles
+sqlalchemy
