@@ -4584,3 +4584,392 @@ Traceback (most recent call last):
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
 ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 2024-12-06 21:17:07,134 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:21:32,463 - WARNING - Heartbeat failed for connection (1649186460560) to 127.0.0.1:9042
+2024-12-08 13:21:32,468 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-08 13:21:34,507 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 846, in factory
+    conn = cls(endpoint, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\io\asyncorereactor.py", line 353, in __init__
+    self._connect_socket()
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
+    raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:21:35,718 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 1.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:21:39,515 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.04 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:21:45,659 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 6.96 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:21:54,702 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 15.68 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:22:12,497 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.0 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:22:46,627 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-08 13:23:51,405 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 110.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-18 20:54:45,529 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:54:46,792 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:54:49,598 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:54:54,081 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:03,008 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:15,451 - WARNING - Heartbeat failed for connection (2909820506832) to 127.0.0.1:9042
+2024-12-18 20:55:15,451 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 20:55:15,577 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:16,494 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.26 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:18,804 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.72 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:22,609 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.76 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:30,474 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 16.64 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:55:47,141 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 35.84 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:56:23,012 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 20:56:23,012 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 20:56:23,147 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 20:59:15,515 - WARNING - Heartbeat failed for connection (2909823097488) to 127.0.0.1:9042
+2024-12-18 20:59:15,516 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 20:59:15,563 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:16,525 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.16 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:17,120 - WARNING - Heartbeat failed for connection (2106173477520) to 127.0.0.1:9042
+2024-12-18 20:59:17,121 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 20:59:17,247 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:18,232 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 1.84 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:18,756 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.04 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:20,154 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.2 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:22,863 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.76 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:24,374 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.24 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:30,689 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 13.76 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:32,700 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:44,568 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 31.68 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 20:59:50,397 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 33.92 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:00:16,361 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:16,362 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:16,521 - WARNING - Failed to create connection pool for new host 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1503, in set_keyspace_blocking
+    result = self.wait_for_response(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1082, in wait_for_response
+    return self.wait_for_responses(msg, timeout=timeout, **kwargs)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1124, in wait_for_responses
+    return waiter.deliver(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1634, in deliver
+    raise self.error
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Keyspace 'cassandra' does not exist"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3234, in run_add_or_renew_pool
+    new_pool = HostConnection(host, distance, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\pool.py", line 409, in __init__
+    self._connection.set_keyspace_blocking(self._keyspace)
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1511, in set_keyspace_blocking
+    raise conn_exc
+cassandra.connection.ConnectionException: Problem while setting keyspace: InvalidRequest('Error from server: code=2200 [Invalid query] message="Keyspace \'cassandra\' does not exist"')
+2024-12-18 21:00:17,628 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:17,628 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:17,772 - WARNING - Failed to create connection pool for new host 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1503, in set_keyspace_blocking
+    result = self.wait_for_response(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1082, in wait_for_response
+    return self.wait_for_responses(msg, timeout=timeout, **kwargs)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1124, in wait_for_responses
+    return waiter.deliver(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1634, in deliver
+    raise self.error
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Keyspace 'cassandra' does not exist"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3234, in run_add_or_renew_pool
+    new_pool = HostConnection(host, distance, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\pool.py", line 409, in __init__
+    self._connection.set_keyspace_blocking(self._keyspace)
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1511, in set_keyspace_blocking
+    raise conn_exc
+cassandra.connection.ConnectionException: Problem while setting keyspace: InvalidRequest('Error from server: code=2200 [Invalid query] message="Keyspace \'cassandra\' does not exist"')
+2024-12-18 21:00:18,936 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:18,936 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:19,068 - WARNING - Failed to create connection pool for new host 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1503, in set_keyspace_blocking
+    result = self.wait_for_response(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1082, in wait_for_response
+    return self.wait_for_responses(msg, timeout=timeout, **kwargs)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1124, in wait_for_responses
+    return waiter.deliver(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1634, in deliver
+    raise self.error
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Keyspace 'cassandra' does not exist"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3234, in run_add_or_renew_pool
+    new_pool = HostConnection(host, distance, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\pool.py", line 409, in __init__
+    self._connection.set_keyspace_blocking(self._keyspace)
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1511, in set_keyspace_blocking
+    raise conn_exc
+cassandra.connection.ConnectionException: Problem while setting keyspace: InvalidRequest('Error from server: code=2200 [Invalid query] message="Keyspace \'cassandra\' does not exist"')
+2024-12-18 21:00:20,136 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:20,136 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:20,270 - WARNING - Failed to create connection pool for new host 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1503, in set_keyspace_blocking
+    result = self.wait_for_response(query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1082, in wait_for_response
+    return self.wait_for_responses(msg, timeout=timeout, **kwargs)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1124, in wait_for_responses
+    return waiter.deliver(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1634, in deliver
+    raise self.error
+cassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message="Keyspace 'cassandra' does not exist"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3234, in run_add_or_renew_pool
+    new_pool = HostConnection(host, distance, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\pool.py", line 409, in __init__
+    self._connection.set_keyspace_blocking(self._keyspace)
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1511, in set_keyspace_blocking
+    raise conn_exc
+cassandra.connection.ConnectionException: Problem while setting keyspace: InvalidRequest('Error from server: code=2200 [Invalid query] message="Keyspace \'cassandra\' does not exist"')
+2024-12-18 21:00:21,345 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:21,345 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:21,478 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 21:00:24,377 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:00:24,377 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:00:24,514 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 21:03:45,588 - WARNING - Heartbeat failed for connection (2909824590928) to 127.0.0.1:9042
+2024-12-18 21:03:45,588 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 21:03:45,606 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:46,800 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 1.88 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:47,192 - WARNING - Heartbeat failed for connection (2106176608720) to 127.0.0.1:9042
+2024-12-18 21:03:47,192 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 21:03:47,288 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:48,312 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.24 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:48,731 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.44 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:50,633 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.12 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:51,096 - WARNING - Heartbeat failed for connection (2251676455184) to 127.0.0.1:9042
+2024-12-18 21:03:51,097 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 21:03:51,191 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:52,227 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.04 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:52,238 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.4 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:54,344 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:54,854 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.32 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:03:59,059 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.88 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:00,690 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 15.04 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:03,280 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 13.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:07,981 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:15,739 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 29.44 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:16,975 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.32 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:25,607 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 33.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:04:45,199 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:04:45,200 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:04:45,339 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 21:04:49,321 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:04:49,322 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:04:49,464 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 21:04:59,272 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
+2024-12-18 21:04:59,272 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
+2024-12-18 21:04:59,402 - INFO - Connection pools established for node 127.0.0.1:9042
+2024-12-18 21:09:47,298 - WARNING - Heartbeat failed for connection (2106178288144) to 127.0.0.1:9042
+2024-12-18 21:09:47,299 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 21:09:47,426 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:09:48,312 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.28 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:09:50,633 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.6 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:09:51,167 - WARNING - Heartbeat failed for connection (2251679307728) to 127.0.0.1:9042
+2024-12-18 21:09:51,168 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-18 21:09:51,214 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2024-12-18 21:09:52,288 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.28 seconds: Connection to 127.0.0.1:9042 was closed
