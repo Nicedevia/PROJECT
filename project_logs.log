@@ -15,7 +15,7 @@ Traceback (most recent call last):
     raise conn.last_error
 cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
 2024-12-05 16:57:27,333 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.24 seconds: Connection to 127.0.0.1:9042 was closed
-2024-12-05 16:57:31,648 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-05 16:57:31,648 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 11:41:16,178 - ERROR - Form data requires "python-multipart" to be installed. 
 You can install "python-multipart" with: 
 
@@ -547,8 +547,8 @@ Traceback (most recent call last):
     self._connect_socket()
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
-ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:19,960 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:19,960 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 15:42:20,572 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
 Traceback (most recent call last):
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
@@ -567,13 +567,13 @@ Traceback (most recent call last):
     self._connect_socket()
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
-ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:21,644 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.14 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:24,292 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:25,861 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:21,644 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.14 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:24,292 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:25,861 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 15:42:29,191 - WARNING - Heartbeat failed for connection (1974096576144) to 127.0.0.1:9042
 2024-12-06 15:42:29,191 - WARNING - Host 127.0.0.1:9042 has been marked down
-2024-12-06 15:42:30,008 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-06 15:42:30,008 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 15:42:31,253 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
 Traceback (most recent call last):
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
@@ -592,26 +592,26 @@ Traceback (most recent call last):
     self._connect_socket()
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
-ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:31,487 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:32,247 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.02 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:36,302 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:39,841 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 13.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:42,134 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:43,037 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:52,390 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:55,479 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:42:58,283 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 30.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:43:12,058 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 28.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:43:30,220 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:43:30,498 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 68.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:43:42,653 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 69.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:44:35,052 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 131.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:44:41,058 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 111.36 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:44:54,497 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 136.96 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:46:34,470 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 230.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:46:48,926 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 225.28 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:47:13,512 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 271.36 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:31,487 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:32,247 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.02 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:36,302 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:39,841 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 13.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:42,134 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:43,037 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:52,390 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.6 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:55,479 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:42:58,283 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 30.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:43:12,058 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 28.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:43:30,220 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:43:30,498 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 68.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:43:42,653 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 69.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:44:35,052 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 131.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:44:41,058 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 111.36 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:44:54,497 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 136.96 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:46:34,470 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 230.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:46:48,926 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 225.28 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:47:13,512 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 271.36 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 15:50:24,991 - INFO - Successful reconnection to 127.0.0.1:9042, marking node up if it isn't already
 2024-12-06 15:50:24,991 - INFO - Host 127.0.0.1:9042 may be up; will prepare queries and open connection pool
 2024-12-06 15:50:25,114 - WARNING - Failed to create connection pool for new host 127.0.0.1:9042:
@@ -4038,7 +4038,8 @@ Traceback (most recent call last):
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1082, in wait_for_response
     return self.wait_for_responses(msg, timeout=timeout, **kwargs)[0]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           2^^^
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 1124, in wait_for_responses
     return waiter.deliver(timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^
@@ -4491,29 +4492,29 @@ Traceback (most recent call last):
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 852, in factory
     raise conn.last_error
 cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
-2024-12-06 15:51:59,338 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.02 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:51:59,803 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.06 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:51:59,850 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:03,439 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:03,907 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:04,046 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:09,065 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.32 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:10,369 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.68 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:10,524 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.88 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:19,521 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:20,109 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.44 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:21,483 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:36,373 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 34.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:38,027 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 33.92 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:52:39,692 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 27.52 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:53:09,279 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:53:13,093 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 58.88 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:53:14,043 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 70.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:54:14,104 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 131.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:54:26,516 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 112.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:56:17,735 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 266.24 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:56:21,260 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 258.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 15:56:28,010 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 291.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2024-12-06 15:51:59,338 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.02 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:51:59,803 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.06 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:51:59,850 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:03,439 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:03,907 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:04,046 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:09,065 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.32 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:10,369 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.68 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:10,524 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 8.88 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:19,521 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:20,109 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.44 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:21,483 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 14.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:36,373 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 34.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:38,027 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 33.92 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:52:39,692 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 27.52 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:53:09,279 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:53:13,093 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 58.88 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:53:14,043 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 70.4 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:54:14,104 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 131.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:54:26,516 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 112.64 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:56:17,735 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 266.24 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:56:21,260 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 258.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 15:56:28,010 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 291.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-06 16:24:30,080 - WARNING - Heartbeat failed for connection (1751718842256) to 127.0.0.1:9042
 2024-12-06 16:24:30,080 - WARNING - Host 127.0.0.1:9042 has been marked down
 2024-12-06 16:24:30,109 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
@@ -4582,8 +4583,8 @@ Traceback (most recent call last):
     self._connect_socket()
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
-ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-06 21:17:07,134 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-06 21:17:07,134 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-08 13:21:32,463 - WARNING - Heartbeat failed for connection (1649186460560) to 127.0.0.1:9042
 2024-12-08 13:21:32,468 - WARNING - Host 127.0.0.1:9042 has been marked down
 2024-12-08 13:21:34,507 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
@@ -4604,14 +4605,14 @@ Traceback (most recent call last):
     self._connect_socket()
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
     raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
-ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:21:35,718 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 1.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:21:39,515 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.04 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:21:45,659 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 6.96 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:21:54,702 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 15.68 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:22:12,497 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.0 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:22:46,627 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
-2024-12-08 13:23:51,405 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 110.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:21:35,718 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 1.76 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:21:39,515 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 4.04 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:21:45,659 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 6.96 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:21:54,702 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 15.68 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:22:12,497 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 32.0 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:22:46,627 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 62.72 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-08 13:23:51,405 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 110.08 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
 2024-12-18 20:54:45,529 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
 Traceback (most recent call last):
   File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
@@ -4973,3 +4974,30 @@ Traceback (most recent call last):
     raise conn.last_error
 cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
 2024-12-18 21:09:52,288 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.28 seconds: Connection to 127.0.0.1:9042 was closed
+2024-12-27 00:48:26,526 - WARNING - Heartbeat failed for connection (2522950685200) to 127.0.0.1:9042
+2024-12-27 00:48:26,531 - WARNING - Host 127.0.0.1:9042 has been marked down
+2024-12-27 00:48:28,573 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 846, in factory
+    conn = cls(endpoint, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\io\asyncorereactor.py", line 353, in __init__
+    self._connect_socket()
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
+    raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:48:29,695 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.0 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:48:33,796 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.8 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:48:39,735 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.92 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:48:49,751 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 15.36 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:49:07,201 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 27.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e
+2024-12-27 00:49:37,128 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 60.16 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e

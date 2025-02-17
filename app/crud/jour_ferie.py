@@ -25,3 +25,4 @@ def update_jour_ferie(date: datetime, jour_ferie: JourFerie):
 def delete_jour_ferie(date: datetime):
     query = "DELETE FROM jour_ferie WHERE date = %s"
     session.execute(query, (date,))
+    return get_jour_ferie(date) is None  # Vérifie si l'entrée existe encore
