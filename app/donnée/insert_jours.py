@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Configuration de la connexion
 cluster = Cluster(['127.0.0.1'], port=9042)
-session = cluster.connect('cassandra')  # Remplacez 'cassandra' par votre keyspace
+session = cluster.connect('cassandra')  # nom de la cls 
 
 # Fonction pour calculer l'année scolaire à partir d'une date
 def calculate_annee_scolaire(date):

@@ -1,5 +1,7 @@
 # app/models/schemas.py
 
+from pydantic import EmailStr
+
 from pydantic import BaseModel, Field
 from datetime import datetime
 import uuid
@@ -74,3 +76,35 @@ class JourFerieVacances(BaseModel):
     zones: str = Field(..., description="Zone concernée, par exemple 'Zone A'")
     annee_scolaire: str = Field(..., description="Année scolaire, par exemple '2024-2025'")
     type_evenement: str = Field(..., description="Type d'événement, par exemple 'vacances'")
+
+class UserBase(BaseModel):
+    username: str = Field(..., min_length=3, max_length=50, description="Nom d'utilisateur")
+    email: EmailStr = Field(..., description="Adresse e-mail de l'utilisateur")
+    is_active: bool = Field(True, description="Statut actif de l'utilisateur")
+
+class UserCreate(UserBase):
+    password: str = Field(..., min_length=6, description="Mot de passe sécurisé")
+
+class UserResponse(UserBase):
+    id: int = Field(..., description="ID unique de l'utilisateur")
+
+    class Config:
+        orm_mode = True
+
+### ✅ Ajout des schémas pour les rôles
+class RoleCreate(BaseModel):
+    name: str
+
+class RoleResponse(BaseModel):
+    id: int
+    name: str
+
+    class Config:
+        orm_mode = True
+
+class UserRoleResponse(BaseModel):
+    user_id: int
+    role_id: int
+
+    class Config:
+        orm_mode = True

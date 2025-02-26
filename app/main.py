@@ -1,11 +1,10 @@
 from fastapi import FastAPI
-from app.routes import limitation, jour_ferie, meteo, vitesse, jours_feries_vacances
-from app.auth_endpoints import auth_router  # Import du routeur d'authentification
+from app.routes import limitation, jour_ferie, meteo, vitesse, jours_feries_vacances, users  # Ajout de 'users'
+from app.auth_endpoints import auth_router  # Authentification
 
-# Initialisation de l'application FastAPI
 app = FastAPI(
     title="API de Gestion des Données",
-    description="Une API pour gérer les données de limitation, jours fériés, météo et vitesse",
+    description="Une API pour gérer les données de limitation, jours fériés, météo et vitesse, ainsi que les utilisateurs",
     version="1.0.0",
 )
 
@@ -13,7 +12,10 @@ app = FastAPI(
 def read_root():
     return {"message": "Hello, World!"}
 
-# Inclure les routes pour chaque module
+# Ajout des routes SQLite (Users)
+app.include_router(users.router, prefix="/users", tags=["Users"])
+
+# Ajout des routes Cassandra
 app.include_router(limitation.router, prefix="/limitation", tags=["limitation"])
 app.include_router(jour_ferie.router, prefix="/jour_ferie", tags=["jour_ferie"])
 app.include_router(meteo.router, prefix="/meteo", tags=["meteo"])

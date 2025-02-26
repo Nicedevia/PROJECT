@@ -1,124 +1,122 @@
-.:
-__init__.py
-__pycache__/
-app/
-arborescence.txt
-create_tables.py
-docker-compose.yml
-Dockerfile
-llmteste.ipynb
-logging_config.py
-net_et_veri_donnee.py
-nettoyer.py
-project_logs.log
-pytest.ini
-README.md
-requirements.txt
-run_all_insertions.py
-schema.cql
-startup.sh*
-token.md
-truncate_tables.py
-view_all_tables_schematic.py
-wait-for-it.sh*
-
-./__pycache__:
-
-./app:
-__init__.py
-__pycache__/
-auth.py
-auth_endpoints.py
-config.py
-crud/
-data/
-db/
-donnée/
-main.py
-manage_users.py
-models/
-nettoye/
-no_test_auth.py
-routes/
-testee.py
-tests/
-utils/
-
-./app/__pycache__:
-
-./app/crud:
-__init__.py
-__pycache__/
-jour_ferie.py
-jours_feries_vacances.py
-limitation.py
-meteo.py
-testcrud.py
-vitesse.py
-
-./app/crud/__pycache__:
-
-./app/data:
-users.json
-
-./app/db:
-__init__.py
-__pycache__/
-cassandra_session.py
-
-./app/db/__pycache__:
-
-./app/donnée:
-insert_jours.py
-insert_meteo.py
-insert_speedlimite.py
-insert_vacances.py
-insert_vitesse.py
-joursf.csv
-meteodata.csv
-meteodata_cleaned.csv
-nice_speed_limits.csv
-nice_speed_limits_cleaned.csv
-nice_speed_limits_invalid.csv
-vacances.csv
-
-./app/models:
-__init__.py
-__pycache__/
-schemas.py
-
-./app/models/__pycache__:
-
-./app/nettoye:
-fr-en-calendrier-scolaire.csv
-joursferier.py
-meteo_historique.py
-vacances.py
-veri_met.py
-veri_speed.py
-
-./app/routes:
-__init__.py
-__pycache__/
-jour_ferie.py
-jours_feries_vacances.py
-limitation.py
-meteo.py
-vitesse.py
-
-./app/routes/__pycache__:
-
-./app/tests:
-__init__.py
-__pycache__/
-test_jour_ferie.py
-test_jours_feries_vacances.py
-test_limitation.py
-test_meteo.py
-test_vitesse.py
-
-./app/tests/__pycache__:
-
-./app/utils:
-__init__.py
-uuid_generator.py
+📂 PROJECT/
+    📄 arborescence.txt
+    📄 check_arborescence.py
+    📄 create_tables.py
+    📄 docker-compose.yml
+    📄 Dockerfile
+    📄 llmteste.ipynb
+    📄 logging_config.py
+    📄 nettoyer.py
+    📄 net_et_veri_donnee.py
+    📄 project_logs.log
+    📄 pytest.ini
+    📄 README.md
+    📄 requirements.txt
+    📄 run_all_insertions.py
+    📄 schema.cql
+    📄 startup.sh
+    📄 texte_to_texte.txt
+    📄 token.md
+    📄 truncate_tables.py
+    📄 user.db
+    📄 users.db
+    📄 view_all_tables_schematic.py
+    📄 wait-for-it.sh
+    📄 __init__.py
+    📂 app/
+        📄 auth.py
+        📄 auth_endpoints.py
+        📄 config.py
+        📄 main.py
+        📄 manage_users.py
+        📄 no_test_auth.py
+        📄 testee.py
+        📄 __init__.py
+        📂 crud/
+            📄 jours_feries_vacances.py
+            📄 jour_ferie.py
+            📄 limitation.py
+            📄 meteo.py
+            📄 testcrud.py
+            📄 vitesse.py
+            📄 __init__.py
+        📂 data/
+            📄 users.json
+            📄 __init__.py
+        📂 db/
+            📄 cassandra_session.py
+            📄 init_db.py
+            📄 __init__.py
+        📂 donnée/
+            📄 insert_jours.py
+            📄 insert_meteo.py
+            📄 insert_speedlimite.py
+            📄 insert_vacances.py
+            📄 insert_vitesse.py
+            📄 joursf.csv
+            📄 meteodata.csv
+            📄 meteodata_cleaned.csv
+            📄 nice_speed_limits.csv
+            📄 nice_speed_limits_cleaned.csv
+            📄 nice_speed_limits_invalid.csv
+            📄 vacances.csv
+            📄 __init__.py
+        📂 models/
+            📄 crud.py
+            📄 db.py
+            📄 main.py
+            📄 mini_test.py
+            📄 models.py
+            📄 schemas.py
+            📄 __init__.py
+        📂 nettoye/
+            📄 fr-en-calendrier-scolaire.csv
+            📄 joursferier.py
+            📄 meteo_historique.py
+            📄 vacances.py
+            📄 veri_met.py
+            📄 veri_speed.py
+            📄 __init__.py
+        📂 routes/
+            📄 jours_feries_vacances.py
+            📄 jour_ferie.py
+            📄 limitation.py
+            📄 meteo.py
+            📄 users.py
+            📄 vitesse.py
+            📄 __init__.py
+        📂 tests/
+            📄 conftest.py
+            📄 test_jours_feries_vacances.py
+            📄 test_jour_ferie.py
+            📄 test_limitation.py
+            📄 test_meteo.py
+            📄 test_users.py
+            📄 test_vitesse.py
+            📄 __init__.py
+        📂 utils/
+            📄 uuid_generator.py
+            📄 __init__.py
+    📂 Recuperation_de_donnes/
+        📄 __init__.py
+        📂 api_meteot/
+            📄 3 en 1.py
+            📄 api_meteo.py
+            📄 component.py
+            📄 config.py
+            📄 historique.py
+            📄 predict.py
+            📄 predict2.py
+            📄 utils.py
+            📄 __init__.py
+        📂 api_routet/
+            📄 routeslimites.py
+            📄 __init__.py
+        📂 joursferieretvacance/
+            📄 2en1.py
+            📄 aveclecsvvacances.py
+            📄 joursferies.py
+            📄 vacance1.py
+            📄 vacances.py
+            📄 vacances2.py
+            📄 __init__.py
