@@ -110,7 +110,7 @@ fi
 
 # Étape 14 : Démarrage de l'API FastAPI
 echo ">>> Démarrage de l'API FastAPI..."
-if uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload & then
+if unicorn app.main:app --host 0.0.0.0 --port 8000 --reload & then
     echo ">>> API FastAPI démarrée avec succès."
 else
     echo ">>> Erreur lors du démarrage de l'API FastAPI."
