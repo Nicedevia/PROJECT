@@ -5112,3 +5112,31 @@ ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)].
 2025-02-26 20:12:53,415 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 227.84 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 2025-02-26 20:16:43,306 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 588.8 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 2025-02-26 20:17:07,664 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 532.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:44:39,997 - WARNING - Heartbeat failed for connection (2832221590736) to 127.0.0.1:9042
+2025-04-12 16:44:40,000 - WARNING - Host 127.0.0.1:9042 has been marked down
+2025-04-12 16:44:42,042 - WARNING - [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 846, in factory
+    conn = cls(endpoint, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\io\asyncorereactor.py", line 353, in __init__
+    self._connect_socket()
+  File "C:\Users\briac\anaconda3\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
+    raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:44:43,240 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 2.22 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:44:47,572 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 3.56 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:44:53,198 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 7.12 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:45:02,438 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 17.44 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:45:21,951 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 28.48 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:45:52,499 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 67.2 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-04-12 16:47:01,757 - WARNING - Error attempting to reconnect to 127.0.0.1:9042, scheduling retry in 145.92 seconds: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
